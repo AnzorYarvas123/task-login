@@ -1,29 +1,41 @@
 <?php
-require_once './connect.php';
+// require_once './connect.php';
 
-if(isset($_POST['submit'])){
+// if(isset($_POST['submit'])){
 
-    $name = $_POST["firstN1"];
-    $email = $_POST["email1"];
-    $password = $_POST["password1"];
-    $Rpassword = $_POST["Rpassword1"];
-    $phone = $_POST["Phone1"];
-    $date = $_POST["Date1"];
+//     $name = $_POST["firstN1"];
+//     $email = $_POST["email1"];
+//     $password = "abc";
+//     $Rpassword =  "abc";
+//     $phone = $_POST["Phone1"];
+    // $date = $_POST["Date1"];
+    
 
-    $sql = "INSERT INTO sign (name, email, password, repassword, phone, date) VALUES (:name, :email, :password, :Rpassword, :phone, :date)";
+//     INSERT INTO table_name (column1, column2, column3, ...)
+// VALUES (value1, value2, value3, ...);
 
-    $query = $db->prepare($sql);
 
-    $query->bindParam(':firstN1',$name, PDO::PARAM_STR);
-    $query->bindParam(':email1',$email, PDO::PARAM_STR);
-    $query->bindParam(':password1',$password, PDO::PARAM_STR);
-    $query->bindParam(':Rpassword1',$Rpassword, PDO::PARAM_STR);
-    $query->bindParam(':Phone1',$phone, PDO::PARAM_INT);
-    $query->bindParam(':Date1',$date, PDO::PARAM_STR);
 
-    $result = $query->execute();
+    // $sql = "INSERT INTO sign (name, email, password, repassword) VALUES ($name, $email, $password, $Rpassword);";
 
-    //header("location: singin.php");
+    // $query = $db->prepare($sql);
+
+
+
+    
+
+    // $query->bindParam(':firstN1',$name, PDO::PARAM_STR);
+    // $query->bindParam(':email1',$email, PDO::PARAM_STR);
+    // $query->bindParam(':password1',$password, PDO::PARAM_STR);
+    // $query->bindParam(':Rpassword1',$Rpassword, PDO::PARAM_STR);
+    // $query->bindParam(':Phone1',$phone, PDO::PARAM_STR);
+    // $query->bindParam(':Date1',$date, PDO::PARAM_STR);
+
+    // $result = $db->exec($sql);
+
+    // header("location: singin.php");
+
+
 
     // if($password === $Rpassword){
 
@@ -50,12 +62,7 @@ if(isset($_POST['submit'])){
 
 
 
-
-
-
-
-
-}
+// }
 
 
 

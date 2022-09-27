@@ -1,12 +1,10 @@
 <?php
 include './connect.php';
 
-// $id=$_GET['id'];
+$id=$_GET['id'];
 
+$sql ="SELECT * FROM sign WHERE id = $id";
 
-// $sql ="SELECT * FROM sign WHERE id = $id";
-
-$sql ="SELECT * FROM sign";
 $getData = $db->query($sql);
 
 $information = $getData->fetchAll(PDO::FETCH_OBJ);
@@ -139,7 +137,7 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
 </head>
 <body>
 
-    <form action="./edit.php"  method="post">
+    <form action="#"  method="post">
         <div id="form" class="container">
           <h1 style="font-size:80px; font-weight: 800; font-family:'Times New Roman', Times, serif;color: rgb(44, 44, 152);">Edit</h1>
           
@@ -195,6 +193,8 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
     <td><?php echo $info->password?></td>
     <td><?php echo $info->phone?></td>
     <td><?php echo $info->date?></td>
+
+
 
   </tr>
   <?php

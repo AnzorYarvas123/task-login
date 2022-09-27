@@ -69,9 +69,9 @@
     <img id="image" src="./Image/1.png">
     <p id="welcome">Welcome to our site</p>
     <div id="button">
-    <button id="adminW"><a href="http://localhost/login.php/adminLogin.php" style="text-decoration: none; color: white;">Admin</a></button>
-    <button id="signin"><a href="http://localhost/Login.php/singin.php" style="color: rgb(246, 246, 246); text-decoration: none;">Sign In</a></button><br><br>
-    <button id="signup"><a href="http://localhost/Login.php/signUp.php" style="color: rgb(246, 246, 246); text-decoration: none;">Sign Up</a></button>
+    <button id="adminW"><a href="http://localhost/Login.php/task-login/adminLogin.php" style="text-decoration: none; color: white;">Admin</a></button>
+    <button id="signin"><a href="http://localhost/Login.php/task-login/singin.php" style="color: rgb(246, 246, 246); text-decoration: none;">Sign In</a></button><br><br>
+    <button id="signup"><a href="http://localhost/Login.php/task-login/signUp.php" style="color: rgb(246, 246, 246); text-decoration: none;">Sign Up</a></button>
 </div>
     
 </body>

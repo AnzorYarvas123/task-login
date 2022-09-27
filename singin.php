@@ -97,9 +97,9 @@
 
           
 
-          <a id="Welcome" href="http://localhost/login.php/welcome.php" style="color:rgb(0, 26, 255);text-decoration: none;">Back To Welcome Page</a>
+          <a id="Welcome" href="http://localhost/Login.php/task-login/welcome.php" style="color:rgb(0, 26, 255);text-decoration: none;">Back To Welcome Page</a>
 
-          <p>Don't have an account?<a href="http://localhost/Login.php/signUp.php" style="color:rgb(0, 26, 255)"> Sign Up</a>.</p>
+          <p>Don't have an account?<a href="http://localhost/Login.php/task-login/signUp.php" style="color:rgb(0, 26, 255)"> Sign Up</a>.</p>
       
           <button id="login" type="submit">Login</button>
          

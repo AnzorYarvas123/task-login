@@ -7,7 +7,6 @@ $getData = $db->query($sql);
 
 $information = $getData->fetchAll(PDO::FETCH_OBJ);
 
-
 ?>
 
 
@@ -133,7 +132,7 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
 </head>
 <body>
 
-    <form action="./create.php"  method="post">
+    <form action="#"  method="post">
         <div id="form" class="container">
           <h1 style="font-size:80px; font-weight: 800; font-family:'Times New Roman', Times, serif;color: rgb(44, 44, 152);">Sign Up</h1>
           
@@ -155,18 +154,19 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
 
           
           <label id="Phone" for="phone"><b>Phone Number: </b></label>
-          <input id="Phone1" type="number" placeholder="Enter Number" name="Phone1" required><br><br>
+          <input id="Phone1" type="text" placeholder="Enter Number" name="Phone1" required><br><br>
+      
 
           <label id="Date" for="Date"><b>Date of Birth: </b></label>
           <input id="Date1" type="date" placeholder="Enter date" name="Date1" required><br>
       
 
       
-          <p>Already have an account? <a href="http://localhost/Login.php/singin.php" style="color:rgb(0, 26, 255)">Login</a>.</p>
+          <p>Already have an account? <a href="http://localhost/Login.php/task-login/singin.php" style="color:rgb(0, 26, 255)">Login</a>.</p>
       
           <div class="clearfix">
             
-            <button id="submit" type="submit" class="submit" name="submit">Sign Up</button>
+            <button id="submit" type="submit" name="submit">Sign Up</button>
           </div>
         </div>
       </form>
@@ -198,7 +198,8 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
   </tr>
   <?php
    }
-  
+
+ 
   ?>
 
 
@@ -209,3 +210,25 @@ $information = $getData->fetchAll(PDO::FETCH_OBJ);
 </body>
 </html>
 
+
+
+<?php
+
+if(isset($_POST['submit'])){
+
+    $name = $_POST["firstN1"];
+    $email = $_POST["email1"];
+    $password = "abc";
+    $Rpassword =  "abc";
+    $phone = $_POST["Phone1"];
+
+    $sql = "INSERT INTO sign (`name`, `email`, `password`, `repassword`) VALUES ($name, $email, $password, $Rpassword);";
+
+    $result = $db->exec($sql);
+
+    // header("location: singin.php");
+
+
+}
+
+?>
